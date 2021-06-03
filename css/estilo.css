@@ -1,0 +1,377 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+body {
+	background-color: #FFD4DB;
+	height: 100vh;
+	display: grid;	
+	grid-template-rows: repeat(8 1fr);
+	align-content: space-between;
+	grid-gap: 10px;
+
+}
+
+header {
+	background-color: #C7FFF6;
+	height: 80px;
+}
+
+article {
+	height: 400px;
+	background:  rgba(199,255,246,0.8);
+
+}
+
+footer {
+	background-color: #C7FFF6;
+	height: 80px;
+}
+
+
+nav {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+#logo-nav {
+	padding-top: 2px;
+	padding-left: 5px;
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li {
+	display: inline;
+}
+
+ul li a {
+	font-family: "Helvetica MS", Sans-serif;
+	line-height: 80px;
+	font-size: 25px;
+	text-decoration: none;
+	margin: 25px;
+	font-weight: bold;
+	color: #F2A2C8;
+}
+
+ul li a:hover {
+	color: #A7AAAA;
+	transition: 0.5s;
+}
+
+#conteudo-1 {
+	background: url(../img/imagem-01.jpg);
+	width: 100%;
+	height: 400px;
+	background-position: center center;	
+}
+
+#conteudo-horario {
+	justify-content: center;
+}
+
+#horario {
+	background: rgba(199,255,246,0.8);
+	width: 30%;
+	min-width: 420px;
+	height: 250px;
+	border-radius: 15px;
+	margin: 75px auto;
+	text-align: center;
+}
+
+h1 {
+	font-family: "Helvetica MS", Sans-serif;
+	text-transform: uppercase;
+	padding: 20px;
+	text-align: center;
+	color: #53958A;
+}
+
+p {
+	font-family: "Helvetica MS", Sans-serif;
+	font-size: 20px;
+	margin: 25px;
+	text-align: center;
+	color: #53958A;
+	font-weight: bold;
+}
+
+.btn {
+	padding: 5px;
+	font-family: "Helvetica MS", Sans-serif;
+	background: #F2A2C8;;
+	border: 1px solid #53958A;
+	border-radius: 5px;
+	font-weight: bold;
+	color: #fff;
+	cursor: pointer;
+}
+
+#conteudo-2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	background: #fff;
+}
+
+#artigos {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;	
+	height: 330px;
+}
+
+.container-artigo {
+	display: block;
+	text-align: center;
+	height: 330px;
+	border-right: 2px solid #F2A2C8;
+	border-left:  2px solid #F2A2C8;
+}
+
+
+.container-artigo h1 {
+	margin-top: 20px;
+	padding: 0;
+
+}
+
+.container-artigo p {
+	font-size: 12px;
+	color: #000;
+	text-align: left;
+	margin-top: 5px;
+}
+
+.container-artigo a {
+	text-decoration: none;
+	color: #F2A2C8;
+	font-family: "Helvetica MS", Sans-serif;
+}
+
+.container-artigo a:hover {
+	background: #fff;
+	border: 2px solid #53958A;
+	padding: 5px;
+	border-radius: 2px;
+}
+
+.h1-dr {
+	padding: 0;
+}
+
+#rodape {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.sociais a {
+	color: #53958A;
+}
+
+.sociais a:hover {
+	color: #F2A2C8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 779px) {
+	nav {
+		display: block;		
+	}
+
+	header {
+		height: 282px;
+	}
+
+	#logo-nav {
+		text-align: center;
+	}
+
+	ul li {
+	display: block;
+	text-align: center;
+	}
+
+	ul li a {
+	font-family: "Helvetica MS", Sans-serif;
+	font-size: 25px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #F2A2C8;	
+	line-height: 50px;
+}
+
+	#horario {
+	background: rgba(199,255,246,0.8);
+	width: 30%;
+	min-width: 320px;
+	height: 250px;
+	border-radius: 15px;
+	margin: 75px auto;
+	text-align: center;
+}
+
+	p {
+	font-size: 15px;
+	font-weight: bold;
+	}
+
+	#conteudo-2 {
+	display: block;
+}
+
+	article#conteudo-2 {
+		height: 1405px;
+	}
+
+	.img-dr {
+		text-align: center;
+	}
+
+	#artigos {
+	display: block;
+}
+
+	article#article2 {
+		height: 1400px;
+	}
+
+	.container-artigo p {
+		text-align: center;
+	}
+
+	footer {
+		height: 130px;
+	}
+
+	#rodape {
+	display: block;
+}
+
+	#rodape p {
+		font-size: 12px;
+	}
+
+	.sociais a {
+		margin-left: 20px;
+	}
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 780px) and (max-width: 1490px) {
+	nav {
+		display: block;		
+	}
+
+	header {
+		height: 160px;
+	}
+
+	ul {
+		text-align: center;
+	}
+
+	#logo-nav {
+		text-align: center;
+	}
+
+	#conteudo-2 {
+	display: block;
+}
+
+	article#conteudo-2 {
+		height: 1495px;
+	}
+
+	.img-dr {
+		text-align: center;
+	}
+
+	#s-margem {
+		margin: 0;
+	}
+
+	#artigos {
+	display: block;
+}
+
+	article#article2 {
+		height: 1400px;
+	}
+
+	.container-artigo p {
+		text-align: center;
+	}
+
+	#rodape {
+	display: block;
+}
+
+}
+
+
+	
+
+
+
+
